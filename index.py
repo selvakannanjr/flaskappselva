@@ -175,6 +175,10 @@ def onedata(id):
 
         return jsonify({'status': 'Interview id: ' + id + ' is updated!'})
 
+@app.route('/testing',endpoint='testing')
+def testing():
+    return "hola hola"
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
